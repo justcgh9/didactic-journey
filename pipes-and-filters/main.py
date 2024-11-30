@@ -1,13 +1,10 @@
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel, Field
-import json
-
-from pipe import Pipe
-from filters.protocol import Filter
 from filters.filter import FilterFilter
-from filters.scream import ScreamingFilter
 from filters.publish import PublishFilter
+from filters.scream import ScreamingFilter
 from message import Message
+from pipe import Pipe
+from pydantic import BaseModel, Field
 
 STOP_WORDS = {"bird-watching", "ailurophobia", "mango"}
 

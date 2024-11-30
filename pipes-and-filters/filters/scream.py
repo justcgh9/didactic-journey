@@ -4,6 +4,7 @@ import multiprocessing
 from filters.protocol import Filter
 from pipe import Pipe
 
+
 class ScreamingFilter(Filter):
     def __init__(self, inputs: list[Pipe], outputs: list[Pipe]):
         super().__init__()

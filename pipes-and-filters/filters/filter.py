@@ -1,10 +1,12 @@
 import multiprocessing
+from typing import Iterable
 
 from filters.protocol import Filter
 from pipe import Pipe
 
+
 class FilterFilter(Filter):
-    def __init__(self, inputs: list[Pipe], outputs: list[Pipe], stopwords: list[str]):
+    def __init__(self, inputs: list[Pipe], outputs: list[Pipe], stopwords: Iterable[str]):
         super().__init__()
         self.inputs, self.outputs = inputs, outputs
         self.stopwords = stopwords

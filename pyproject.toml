@@ -1,0 +1,4 @@
+[tool.mypy]
+exclude = [".venv"]
+disable_error_code = ["import-untyped"]
+

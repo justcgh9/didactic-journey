@@ -2,6 +2,7 @@ from multiprocessing import Queue
 
 from message import Message
 
+
 class Pipe:
     def __init__(self) -> None:
         self.queue: Queue = Queue()

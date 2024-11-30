@@ -1,7 +1,7 @@
 import multiprocessing
 import smtplib
-from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 from filters.protocol import Filter
 from pipe import Pipe

@@ -1,7 +1,8 @@
+import json
+
+import pika
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
-import pika
-import json
 
 app = FastAPI()
 
