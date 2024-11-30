@@ -11,7 +11,7 @@ SMTP_PORT = 587
 SMTP_USER = "zvukovat@gmail.com"
 SMTP_PASSWORD = "geeq rrjm cjaq knag"
 
-RECIPIENTS = ["alisher.100704@gmail.com", "strelnikova.kira354@gmail.com"]
+RECIPIENTS = ["a.kabardiyadi@innopolis.university", "k.strelnikova@innopolis.university", "m.oinoshev@innopolis.university", "n.petukhov@innopolis.university", "i.nasibullina@innopolis.university"]
 
 class PublishFilter(Filter):
     def __init__(self, inputs: list[Pipe], outputs: list[Pipe]):
