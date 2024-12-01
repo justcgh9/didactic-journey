@@ -29,7 +29,7 @@ To run a message broker based implementation you need to run all services
 $ make run-message-brokers
 ```
 
-## Linters and formatters
+## Linters, formatters and load testing
 
 ### Install dev dependecies
 ```
@@ -44,4 +44,10 @@ $ make format
 ### Run linters
 ```
 $ make check
+```
+
+### Load testing
+For load testing we uses locust, run locust server:
+```
+$ locust -f locustfile.py
 ```
