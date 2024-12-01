@@ -1,5 +1,6 @@
 import multiprocessing
 import smtplib
+from datetime import datetime
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
@@ -49,3 +50,7 @@ class PublishFilter(Filter):
                 self.send_email(f"New message from {message.from_}", f"Message Content:\n\n{message.message}", RECIPIENTS)
                 for output_pipe in self.outputs:
                     output_pipe.send(message)
+
+                with open('pipes-and-filters-time.txt', 'w') as f:
+                    seconds = (datetime.now() - message.created_at).total_seconds()
+                    f.write(f"process time: {seconds}s")
