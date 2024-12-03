@@ -1,6 +1,9 @@
 # didactic-journey
 SoftArch repo on message brokers
 
+## Performance testing report
+
+[link](https://github.com/justcgh9/didactic-journey/blob/main/Performance%20testing%20report.pdf)
 
 ## How to run
 
